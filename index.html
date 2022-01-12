@@ -1,7 +1,7 @@
 <!doctype html>
+<help></help>
 <html lang="en">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -32,7 +32,7 @@
     <a class="nav-brand navbar-brand ml-5" href="/">
       
       <svg class=" featurette-image img-fluid mx-auto" width="150" height="45"  >
-          <image xlink:href="static/img/logo_original_cutted.png" height="100%" width="100%" alt="логотип BeneFit в виде сердца" />
+          <image xlink:href="static/img/new_logo_cutted.png" height="100%" width="100%" alt="логотип BeneFit в виде сердца" />
         </svg>
     </a>
 
@@ -50,10 +50,10 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle {{active_calculator}}" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Калькуляторы
+         Виды почв
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="/calculators/BMI">Калькулятор индекса массы тела</a></li>
+            <li><a class="dropdown-item" href="templates/">Калькулятор индекса массы тела</a></li>
             <li><a class="dropdown-item" href="/calculators/heart_rate">Калькулятор частоты сердечных сокращений</a></li>
             <li><a class="dropdown-item" href="/calculators/water">Калькулятор нормы воды в день </a></li>
             <li><a class="dropdown-item" href="/calculators/calories">Калькулятор калорийности рациона</a></li>
@@ -62,12 +62,12 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{active_recommendations}}" href="/recommendations">Рекоммендации</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {{active_nutrition}}" href="/nutrition">Питание</a>
+          <a class="nav-link {{active_recommendations}}" href="/recommendations">Улучшение плодородия</a>
         </li>
        
+        <li class="nav-item">
+          <a class="nav-link {{active_recommendations}}" href="/recommendations">Экологические проблемы</a>
+        </li>
         
       </ul>
 
@@ -93,36 +93,35 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="static/img/green_run.jpg" alt="бегущий человек в парке" height="100%" wight="100%">
+        <img src="static/img/land4.jpg" alt="бегущий человек в парке" height="100%" wight="100%">
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Будь всегда в форме</h1>
-            <p>BeneFit поможет тебе в этом</p>
-            <p><a class="btn btn-lg btn-primary" href="/register">Зарегистрироваться</a></p>
+            <h1>Все что нужно знать о почвах</h1>
+            <p>Специальный сайт для изучения этой темы</p>
+            <p><a class="btn btn-lg btn-primary" href="/register">Изучать</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="static/img/bike.jpg" alt="велосипедист на большой скорости" height="100%" wight="100%">
+        <img src="static/img/land1.jpg" alt="велосипедист на большой скорости" height="100%" wight="100%">
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Узнай скорость своего обмена веществ</h1>
-            <p>Этот, а также 5 других показателей ты можешь рассчитать в наших калькуляторах</p>
-            <p><a class="btn btn-lg btn-primary" href="/calculators/calories">Рассчитать метаболизм</a></p>
+			<h1>Способы улучшения плодородия</h1>
+            <p>Будет полезно знать, если ваша почва недостаточно хороша</p>
+            <p><a class="btn btn-lg btn-primary" href="/calculators/calories">Перейти</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="static/img/nutrition_4.jpg" alt="продукты правильного питания" height="100%" wight="100%">
+        <img src="static/img/land5.jpg" alt="продукты правильного питания" height="100%" wight="100%">
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Составь идеальный план питания</h1>
-            <p>Сформируй свои рационы согласно полученным рекомендациям</p>
-            <p><a class="btn btn-lg btn-primary" href="/nutrition">Узнать пищевую ценность продукта</a></p>
-          </div>
+            <h1>Экологические проблемы почв</h1> <p>Каким образом человек загрязняет почву и как этого избежать</p>
+            <p><a class="btn btn-lg btn-primary" href="/nutrition">Почитать об этом</a></p>
+           
         </div>
       </div>
     </div>
@@ -141,9 +140,10 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-    <h1 class="text-center mb-5">Особенности</h1>
+    <h1 class="text-center mb-5">Вводная информация</h1>
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div class="row justify-content-center">
+		<!--
       <div class="col-lg-4">
         <svg class=" featurette-image img-fluid mx-auto rounded-circle" width="140" height="140"  >
           
@@ -155,7 +155,7 @@
           <p>Данный сайт является полностью бесплатным и любой желающий может начать менять свою жизнь к лучшему. Кроме того сайт имеет открытый исходный код, что позволит другим разработчикам узнать как он устроен.<br></p>
         </div>
         <p><a class="btn btn-primary" href="https://github.com/AlGaRitm2020/BeneFit_Web">Посмотреть исходный код &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
+      </div>
       <div class="col-lg-4">
         <svg class=" featurette-image img-fluid mx-auto rounded-circle" width="140" height="140"  >
           
@@ -167,27 +167,31 @@
           <p >Вы можете пользоваться этим сайтом с любого устройства. Планшет, смартфон или ноутбук - неважно. Везде будет комфортный интерфейс.<br><br><br> </p>
         </div>
         <p><a class="btn btn-primary" href="https://sobe.ru/na/support_BeneFit">Поддержать проект &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class=" featurette-image img-fluid mx-auto rounded-circle" width="140" height="140"  >
-          
-          <rect class='features-rect' width="100%" height="100%" />
-          <image xlink:href="static/img/cloud.png" height="100%" width="100%" alt="облачное хранилище" />
-        </svg>
-        <div class="features-block">
-          <h2>Сохранение данных</h2>
-          <p>Если вы вошли в аккаунт, то не нужно каждый раз заново вводить данные в калькуляторе. Это также помогает в выдаче рекомендаций.<br><br></p>
-        </div>
-        <p><a class="btn btn-primary" href="/login">Войти в аккаунт &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-
+      </div>
+		-->
+      <div class="col-lg-10 ">
+		  <div class='features-block'>
+		  <p><div>Dolor nobis perferendis fugiat quibusdam dolorum Dolor nobis lorem adipisci molestiae ratione quod, neque. Labore quo nostrum dolores ipsum corporis Vero ratione repellendus saepe odio totam Sunt animi sapiente culpa.</div>
+<div>Dolor sed ad nam commodi assumenda ad. Accusamus veritatis ea amet doloremque ipsam! Voluptate deleniti provident officia molestiae nihil obcaecati Vero repellendus culpa assumenda voluptatem quia. Vel dicta inventore distinctio</div>
+<div>Dolor cupiditate totam quae molestias praesentium, ex. Dicta eligendi asperiores enim dolorem quisquam Repudiandae ea impedit fugiat cum fugit A consequatur quis amet voluptates totam. Iusto at fugiat a perferendis.</div>
+<div>Dolor vel cumque illo rem optio! Sit sint quas aspernatur illo ad nisi officiis, rerum, praesentium! Officiis voluptatem nemo necessitatibus maxime vitae! Repudiandae itaque soluta quod recusandae consequatur, minus Ducimus.</div>
+<div>Ipsum ratione ipsum ullam pariatur nemo Omnis voluptatibus cum asperiores odio consequuntur. Doloremque eius impedit pariatur cum ipsum? Rerum fugiat fugiat et nesciunt optio Ad quibusdam debitis debitis blanditiis dolores.</div>
+<div>Dolor repellendus fugiat beatae ipsa harum Fuga assumenda voluptates fugiat voluptate unde voluptatum. Laudantium velit vel culpa quaerat facilis! Qui error dolor explicabo voluptates in Dolorum similique nesciunt facere repudiandae</div>
+<div>Adipisicing repudiandae odio praesentium labore at Ratione eum aut expedita repellendus tempore obcaecati dignissimos Dolorem saepe incidunt suscipit rerum dolor ex quia tenetur. Ipsum incidunt soluta dignissimos debitis veniam necessitatibus</div>
+</p>
+		  
+		  </div>
+		  	
+			
+      </div>
+    
     </div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
-
+	<!--
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Калькуляторы <br> <span class="text-muted">Проверь свое здоровье</span></h2>
@@ -226,14 +230,14 @@
       </div>
       <div class="col-md-5">
         <svg class=" featurette-image img-fluid mx-auto" width="500" height="500"  >
-          <image xlink:href="/static/img/road.jpg" height="100%" width="100%" alt="человек стоящий посреди дороги" />
+          <image xlink:href="static/img/road.jpg" height="100%" width="100%" alt="человек стоящий посреди дороги" />
         </svg>
 
       </div>
     </div>
 
     <hr class="featurette-divider">
-
+	-->
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
@@ -242,7 +246,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Наверх</a></p>
-    <p class="float-start">&copy; 2021 AlGaRitm &middot</p>
+    <p class="float-start">&copy; 2022 Даниил Сайфутдинов &middot</p>
     <p class="float-start">
       <a href="https://t.me/albert_gareev">
         <svg class=" featurette-image img-fluid mx-auto rounded-circle footer-icon" width="40" height="40"  >
@@ -252,7 +256,7 @@
         </svg>
       </a>
 
-      <a href="https://github.com/AlGaRitm2020">
+      <a href="https://github.com/AlGaRitm2020/SaifLand">
         <svg class=" featurette-image img-fluid mx-auto rounded-circle footer-icon" width="40" height="40"  >   
           <rect class='footer-rect' width="100%" height="100%" />
           <image xlink:href="static/img/github.png" height="100%" width="100%" alt="иконка GitHub" />
