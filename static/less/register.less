@@ -1,0 +1,223 @@
+
+@bg-main:#f7f7f7;
+@bg-form:#ffcc00;
+@health-color:#4ca64f;
+@accent-color:#BC4123;
+
+// *{
+//   margin: 0;
+//   padding: 0;
+
+//   // box-sizing: content-box;
+// }
+
+.body{
+  font-size:20px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &-bg{
+    &-apples{
+      background-image: url(../img/register-apples.jpg);
+    }
+    &-avocados{
+      background-image: url(../img/register-avocados.jpg);
+    }
+    &-cabbages{
+      background-image: url(../img/register-cabbage.jpg);
+  
+    }
+    &-limes{
+      background-image: url(../img/register-limes.jpg);
+    }
+    &-salad{
+      background-image: url(../img/register-salad.jpg);
+    }
+  }
+}
+
+// .container{
+//   margin-left:-30px;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+
+.arrow-back{
+
+  z-index: 100;
+  position: relative;
+  transition: 0.3s;
+  margin:0;
+  right: 100;
+  top: 100px;
+  &:hover{
+    opacity: 0.5;
+  transition: 0.3s;
+  }
+  &-auth{
+    top: -132px;
+  }
+}
+
+
+// .form{
+//   background-color: #fff;
+//   height: 400px;
+//   width: 300px;
+//   padding:32px;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 16px #ccc;
+//   font-family:  Gilroy, sans-serif;
+//   letter-spacing: 1px;
+//   z-index: 1;
+
+//   &-title{
+//     text-align: center;
+//     margin-bottom: 32px;
+//     font-weight: 600;
+//     color:@health-color;
+//   }
+
+//   &-auth{
+//     height: 250px;
+//   }
+
+//   &-group{
+//     position: relative;
+//     margin-bottom: 32px;
+//   }
+
+
+
+//   &-button{
+//     font-weight: 600;
+//     margin: auto;
+//     padding:10px 10px;
+//     border: 2px solid lighten(@health-color, 10%);
+//     border-radius: 5px;
+//     color: white;
+//     background-color: @health-color;
+//     outline:none;
+//     cursor: pointer;
+//     transition: 0.3s;
+
+//     &:focus, &-hover{
+//       background-color: lighten(@health-color, 10%);
+//       border: 2px solid lighten(@health-color, 20%);
+//       transition: 0.3s;
+//     }
+//     &-block{
+//       display: flex;
+//       justify-content: center;
+//       margin-bottom:10px;
+//     }
+//     &-another{
+
+//       text-decoration: none;
+//       color:grey;
+//     }
+//   }
+
+//   &-input, &-button{
+//     font-family:  Gilroy, sans-serif;
+//     letter-spacing: 1px;
+//     font-size: 16px;
+//   }
+
+//   &-input:focus ~ &-label,
+//   &-input:not(:placeholder-shown) ~ &-label{
+//     top:-18px;
+//     font-size: 12px;
+//     color:@health-color;
+//   }
+// }
+
+html,
+body {
+  height: 100%;
+  color:@health-color;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../../static/img/register-cabbage.jpg);
+}
+
+
+
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  background-color: @bg-main;
+  outline:none;
+  border-radius: 10px;
+  label{
+    color:grey;
+    
+
+  }
+  .input{
+    background-color: @bg-main;
+    &:focus{
+      border-color:@health-color;
+      box-shadow: 0 0 15px @health-color !important;
+    }
+    &:focus ~ label{
+      color:@health-color;
+    }
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
+
+.form-control{
+  margin:0;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+ 
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+ .btn{
+  &-submit{
+    &:focus{
+      border-color:@health-color;
+      box-shadow: 0 0 15px @health-color !important;
+    }
+    &:hover{
+      background-color:lighten(@health-color, 10%);
+      color:lighten(@bg-main, 10%);
+    }
+    border: 2px solid lighten(@health-color, 10%);
+    border-radius: 5px;
+    color: @bg-main;
+    background-color: @health-color;
+  }
+  &-another{
+    text-decoration: none !important;
+    color:grey;
+  }
+ }

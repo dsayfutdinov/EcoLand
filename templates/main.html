@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/img/logo_only.png" type="image/x-icon">
+
+    <!-- <link href="../static/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>BeneFit</title>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav fixed-top">
+  <div class="container-fluid">
+    <a class="nav-brand navbar-brand ml-5" href="/">
+      
+      <svg class=" featurette-image img-fluid mx-auto" width="150" height="45"  >
+          <image xlink:href="../static/img/logo_original_cutted.png" height="100%" width="100%" alt="" />
+        </svg>
+    </a>
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link {{active_home}}" aria-current="page" href="/">Главная</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {{active_calculator}}" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Калькуляторы
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="/calculators/BMI">Калькулятор индекса массы тела</a></li>
+            <li><a class="dropdown-item" href="/calculators/heart_rate">Калькулятор частоты сердечных сокращений</a></li>
+            <li><a class="dropdown-item" href="/calculators/water">Калькулятор нормы воды в день </a></li>
+            <li><a class="dropdown-item" href="/calculators/calories">Калькулятор калорийности рациона</a></li>
+            <li><a class="dropdown-item" href="/calculators/body_type">Калькулятор типа телосложения</a></li>
+            <li><a class="dropdown-item" href="/calculators/body_fat">Калькулятор процента жира</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{active_recommendations}}" href="/recommendations">Рекоммендации</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{active_nutrition}}" href="/nutrition">Питание</a>
+        </li>
+       
+        
+      </ul>
+
+        <a href=""></a>
+        <form class="d-flex nav-right-block flex-space-between">
+              {% if current_user.is_authenticated %}
+
+    <div class="btn-group">
+  <a type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    {{ current_user.name }}
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/logout">Выйти</a></li>
+    <li><a class="dropdown-item" href="/profile">Профиль</a></li>
+    
+  </ul>
+
+          
+    
+      </form>
+    </div>
+
+   
+
+  </div>
+</nav>
+
+
+
+
+<!-- Сontent -->
+<main role="main " class="main main-content">
+  <div  class="container">
+        {% block content %}{% endblock %}
+  </div>
+</main>
+
+
+<script src="../static/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

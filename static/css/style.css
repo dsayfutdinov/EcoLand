@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+}
+.border-health {
+  border: 1px solid #4ca64f;
+}
+.header {
+  font-weight: 600;
+}
+.sub-header {
+  padding-left: 20px;
+  color: #888;
+}
+.btn:hover {
+  box-shadow: #4ca64f;
+}
+.input:focus {
+  border-color: #4ca64f;
+  box-shadow: 0 0 15px #4ca64f !important;
+}
+.nav {
+  font-size: 16px;
+  background-color: #fff !important;
+}
+.nav-brand {
+  color: #4ca64f !important;
+  font-size: 30px;
+  color: #fff;
+}
+.nav-btn-auth {
+  background-color: #4ca64f;
+  border: 1px solid #6abb6d;
+  color: #f7f7f7;
+}
+.nav-btn-auth:hover {
+  color: #f7f7f7;
+  background-color: #6abb6d;
+  border: 1px solid #6abb6d;
+}
+.nav-btn-reg {
+  background-color: #f7f7f7;
+  border: 1px solid #4ca64f;
+  color: #4ca64f;
+}
+.nav-btn-reg:hover {
+  background-color: #ffffff;
+  color: #6abb6d;
+  border: 1px solid #6abb6d;
+}
+.nav-right-block {
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.base {
+  margin-bottom: 2rem;
+}
+.calculator-form {
+  padding: 2rem 0;
+}
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  background-color: #ffcc00;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.form-field-gender {
+  border: none;
+}
+.btn-primary {
+  background-color: #4ca64f;
+  border-color: #4ca64f;
+}
+.btn-primary:hover {
+  background-color: #6abb6d;
+  border-color: #4ca64f;
+}
+.btn-primary:active {
+  background-color: #6abb6d;
+  border-color: #4ca64f;
+}
+.main {
+  margin-top: 70px;
+}
+.main-content {
+  margin-top: 90px;
+}
+.card-head {
+  background-color: #4ca64f;
+  text-align: center;
+  height: 50px;
+  font-size: 30px;
+  color: #f7f7f7;
+}
+.card-head-main {
+  background-color: #4ca64f;
+  text-align: center;
+  height: 50px;
+  font-size: 30px;
+  color: #24476e;
+  font-weight: 900;
+}
+.sidebar-card {
+  border: 1px solid #4ca64f;
+}
+.sidebar-card-head {
+  background-color: #4ca64f;
+}
+.home-btn-download {
+  width: 200px;
+}
+.calculator-btn {
+  background-color: #4ca64f;
+  border-color: #4ca64f;
+  color: #fff;
+}
+.calculator-btn:hover {
+  color: #fff;
+  background-color: #6abb6d;
+  border-color: #4ca64f;
+}
+.calculator-result {
+  font-size: 30px;
+}
+.calculator-result-value {
+  font-weight: 800;
+  font-size: 40px;
+  color: #BC4123;
+  color: #4ca64f;
+}
+.calculator-table {
+  font-family: sans-serif;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: #ece9e0;
+  color: #656665;
+  border: #ece9e0 solid 16px;
+  border-radius: 25px;
+}
+.calculator-table th {
+  font-size: 18px;
+  padding: 10px 10px 10px 0;
+}
+.error-message {
+  color: #bc4123;
+  font-size: 24px;
+}
+.list-group .active {
+  background-color: #4ca64f;
+  border-color: #6abb6d;
+}
+.health-button {
+  background-color: #4ca64f;
+  border-color: #4ca64f;
+  color: #fff;
+}
+.health-button:hover {
+  color: #fff;
+  background-color: #6abb6d;
+  border-color: #4ca64f;
+}
+.recommendations {
+  background-color: #4ca64f;
+  padding: 3px;
+  color: #ffffff;
+  font-size: 20px;
+  border: solid 1px #cdcdcd;
+}
+.nutrition-card {
+  background-color: #4ca64f;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.nutrition-card-head {
+  background-color: #ffffff;
+  color: #4ca64f;
+  border-radius: 15px 15px 0 0;
+}
+.features-block {
+  min-height: 250px;
+}
+.features-rect {
+  fill: #7cc37e;
+}
+.footer-rect {
+  fill: #d1d1d1;
+}
+.footer-icon {
+  margin-top: -8px;
+}
+.page-title {
+  text-align: center;
+}
+iframe {
+  margin-top: 3rem;
+  height: 315px;
+  width: 100%;
+}
