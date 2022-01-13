@@ -92,6 +92,14 @@ body {
 .main-content {
   margin-top: 90px;
 }
+.main-lands{
+  background-color:red;
+  min-height:40px;
+}
+.main-lands-item{
+  min-height:140px;
+  background-image:url(../img/land0.jpg);
+}
 .card-head {
   background-color: #4ca64f;
   text-align: center;
