@@ -106,15 +106,18 @@ body {
 
 .main-lands-item:hover .item-text{
   opacity: 1;
+  display: block;
 }
 
 .main-lands-img{
+  display: block;
   background-color:#6abb6d;  
 
 }
 .real-img {
-	height:100%;
+	height:190px;
 	width: 100%;
+    object-fit: cover; 
 }
 .main-lands-img .real-img{
   display: block;
