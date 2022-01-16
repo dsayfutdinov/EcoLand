@@ -275,11 +275,24 @@ margin-bottom: 20px;
 
 .subheader{
   color: #333;}
-  
 .quote {
 	margin: 30px 0 30px;
 	padding: 10px 10px 10px 100px;
 	font-size: 22px;
 	background: #fffad9 url("../img/blockquote.png") no-repeat 6px 47%;
 }
+.row ul {
+  list-style: none; /* Remove default bullets */
+}
 
+.row ul li::before {
+  content: "»";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #4ca64f;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.row li{
+ font-size:20px;
+}
