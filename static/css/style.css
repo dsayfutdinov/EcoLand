@@ -260,9 +260,16 @@ background-color:rgba(76,166,79,0.5);
 .content-img{
 text-align: center;	
 }
+.content-img img{
+height: 500px;
+	width: 70%;
+    object-fit: cover; 
+
+}
 .content-text{
 font-size:18px;
 margin-top: 30px;
+
 }
 
 .subheader{
